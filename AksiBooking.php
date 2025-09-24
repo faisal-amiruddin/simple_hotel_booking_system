@@ -27,8 +27,14 @@ $formBooking->addField("layanan3", "Antar Jemput Bandara", "checkbox", ["value" 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<?php
-$formBooking->displayForm();
-?>
+    <div class="container">
+        <div class="mt-5 d-flex justify-content-between">
+            <a href="AksiTipe.php">Form Tambah Tipe Kamar</a>
+            <a href="AksiBooking.php">Form Tambah Kamar</a>
+        </div>
+        <?php
+        $formBooking->displayForm();
+        ?>
+    </div>
 </body>
 </html>
