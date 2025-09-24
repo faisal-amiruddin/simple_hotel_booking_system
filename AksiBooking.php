@@ -30,7 +30,7 @@ $formBooking->addField("layanan3", "Antar Jemput Bandara", "checkbox", ["value" 
     <div class="container">
         <div class="mt-5 d-flex justify-content-between">
             <a href="AksiTipe.php">Form Tambah Tipe Kamar</a>
-            <a href="AksiBooking.php">Form Tambah Kamar</a>
+            <a href="AksiKamar.php">Form Tambah Kamar</a>
         </div>
         <?php
         $formBooking->displayForm();
