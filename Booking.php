@@ -11,7 +11,11 @@ $nama_tamu = $_POST['nama_tamu'] ?? '';
 $id_tipe   = $_POST['id_tipe'] ?? '';
 $checkin   = $_POST['checkin'] ?? '';
 $checkout  = $_POST['checkout'] ?? '';
-$layanan   = $_POST['layanan'] ?? [];
+
+$layanan = [];
+if (isset($_POST['layanan1'])) $layanan[] = $_POST['layanan1'];
+if (isset($_POST['layanan2'])) $layanan[] = $_POST['layanan2'];
+if (isset($_POST['layanan3'])) $layanan[] = $_POST['layanan3'];
 
 $nama_tipe = $tipeOptions[$id_tipe] ?? 'Tidak Diketahui';
 ?>
